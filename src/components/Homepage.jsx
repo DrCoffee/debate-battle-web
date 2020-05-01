@@ -1,4 +1,5 @@
 import Header from "./Header";
+import Login from "./Login";
 import PropTypes from "prop-types";
 import React, { Component } from "react";
 
@@ -56,9 +57,9 @@ export default class HomePage extends Component {
           authenticated={authenticated}
           handleNotAuthenticated={this._handleNotAuthenticated}
         />
-        <div>
+        <div class='text-center'>
           {!authenticated ? (
-            <h1>Welcome!</h1>
+            <Login/>
           ) : (
             <div>
               <h1>You have login succcessfully!</h1>
